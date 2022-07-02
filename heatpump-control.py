@@ -22,7 +22,7 @@ client.loop_start()
 
 # subscribe to mqtt topic
 # evcc target power = evcc controlled power value that heatpump should reach
-client.subscribe("evcc/loadpoints/2/maxCurrent")
+client.subscribe("heatpump_control/maxCurrent")
 client.subscribe("panasonic_heat_pump/s0/Watt/1")
 
 client.on_message = on_message
